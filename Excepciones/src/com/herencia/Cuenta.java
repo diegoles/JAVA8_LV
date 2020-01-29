@@ -42,9 +42,14 @@ public class Cuenta {
 		agregar(100);
 	}
 	
-	public void metodoAsignacion() throws Exception{
-		double x = Math.random()*10;
-		Exception ex = (x<5)?new Exception():new RuntimeException();
+	public void metodo6() throws Exception {
+		double x = Math.random() * 10;
+		Exception ex = (x < 5) ? new Exception() : new RuntimeException();
 		throw ex;
+	}
+	
+	public void metodo7() throws Exception {
+		double x = Math.random() * 10;
+		throw (x < 5) ? new Exception() : new RuntimeException();
 	}
 }
