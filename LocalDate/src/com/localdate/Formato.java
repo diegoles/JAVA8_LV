@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import javax.swing.text.DateFormatter;
+
 public class Formato {
 
 	public static void main(String[] args) {
@@ -27,6 +29,15 @@ public class Formato {
 
 		String cadena5 = ldt.format(DateTimeFormatter.ISO_DATE_TIME); 
 		System.out.println(cadena5);
+		
+		
+		LocalDate ld1 = LocalDate.parse("2020-01-25T00:35", DateTimeFormatter.ISO_DATE_TIME);
+		String formated = ld1.format(DateTimeFormatter.ISO_DATE);
+		System.out.println("formated:" + formated);
+		
+		LocalDate ld2 = LocalDate.parse("2020-01-25", DateTimeFormatter.ISO_DATE_TIME);
+		String formated2 = ld1.format(DateTimeFormatter.ISO_DATE);
+		System.out.println("formated:" + formated2); // error ejecucion java.time.format.DateTimeParseException
 		
 	}
 
