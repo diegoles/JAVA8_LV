@@ -34,6 +34,9 @@ public class Buscador {
 
 		Persona res3 = buscar(personas, (Persona p) -> p.getEdad() > 18);
 		System.out.println(res3);
+		
+		Persona res4 = buscar(personas, p -> p.getEdad() > 18);
+		System.out.println(res4);
 
 	}
 
