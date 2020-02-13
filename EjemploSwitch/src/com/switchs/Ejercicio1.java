@@ -37,6 +37,16 @@ public class Ejercicio1 {
 		default:
 			break;
 		}*/
+		
+		/*boolean valor = true;
+		switch (valor) {
+		case 2:
+			break;
+		case 12:
+			break;
+		default:
+			break;
+		}*/
 	}
 
 }
